@@ -22,7 +22,7 @@ if __name__ == '__main__':
     name_regex = "^[A-Z][a-z]{2,}$"
     email_regex = "^\w{3,}(\.\w{3,})*\@[a-z]{2,}\.[a-z]{2,3}(\.[a-z]{2})*$"
     phone_regex = "^91 [6-9][0-9]{9}$"
-    password_regex = "[A-Za-z-0-9]{8,}"
+    password_regex = "(?=.*[A-Z]).{8,}$"
 
     first_name = input("Enter your first name : ")
     print(user.inputValidation(first_name, name_regex))
